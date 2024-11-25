@@ -38,7 +38,7 @@ header{
 
 header .list-items{
     display: flex;
-    max-width: 260px;
+    max-width: 160px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
