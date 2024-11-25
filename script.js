@@ -34,7 +34,7 @@ function registrar(){
         localStorage.setItem('senha', senha.value);
         alert("Usuario cadastrado com sucesso!");
                 setTimeout(function() {
-            window.location.href = "index.html"; 
+            window.location.href = "index-login.html"; 
         }, 2000);
 
     }else{
