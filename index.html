@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Design de Login Minimal | AsmrProg</title>
+    <title>Login do Mundo Encantado | Pequeninos</title>
 </head>
 
 <body>
 
     <div class="logo">
         <a href="">
-            <img src="logo.png">
+            <img src="logo.png" alt="Logo dos Pequeninos">
         </a>
     </div>
 
     <div class="container">
-        <h1>Faça login na sua conta </h1>
+        <h1>Entre na sua conta mágica! ✨</h1>
         <div class="social-login">
             <button class="google">
                 <i class='bx bxl-google'></i>
@@ -36,28 +36,26 @@
         </div>
 
         <form id="some-form">
-            <label for="email">Email:</label>
+            <label for="email">Email</label>
             <div class="custome-input">
-                <input type="email" name="email" id="email" placeholder="Seu Email" autocomplete="off">
+                <input type="email" name="email" id="email" placeholder="Digite seu Email" autocomplete="off">
                 <i class='bx bx-at'></i>
             </div>
-            <label for="password">Senha:</label>
+            <label for="password">Senha</label>
             <div class="custome-input">
-                <input type="password" name="password" id="password" placeholder="Sua Senha">
+                <input type="password" name="password" id="senha" placeholder="Digite sua Senha">
                 <i class='bx bx-lock-alt'></i>
             </div>
-            <div class="custome-input">
-                <input type="password" name="password" id="confirm_password" placeholder="Confirmar Senha">
-                <i class='bx bx-lock-alt'></i>
-            </div>
-            <button onclick="registrar()" class="login">Registrar</button>
+            <button onclick="entrar()" class="login">Entrar</button>
             <div class="links">
+                <a href="Senha.html">Esqueceu sua Senha?</a>
+                <a href="index-cadastro.html">Criar uma nova conta!</a>
             </div>
         </form>
 
+            <script src="script.js"></script>
     </div>
 
-    <script src="script.js"></script>
 </body>
 
 </html>

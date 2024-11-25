@@ -3,21 +3,25 @@ form.addEventListener('submit', e => {
 e.preventDefault()
 })
 
-function entrar(){
-
+function entrar() {
     var email = document.getElementById("email");
-    var senha = document.getElementById("senha")
+    var senha = document.getElementById("senha");
 
     var emailStore = localStorage.getItem('email');
     var senhaStore = localStorage.getItem('senha');
 
-    if(emailStore == email.value && senhaStore == senha.value){
+    if (emailStore == email.value && senhaStore == senha.value) {
         alert("Login realizado com sucesso!");
-    }else{
-        alert("Usuario ou senha incorreto!");
+        
+
+        setTimeout(function() {
+            window.location.href = "Assinatura/Assinatura.html"; 
+        }, 2000);
+        
+    } else {
+        alert("Usuário ou senha incorretos!");
     }
 }
-
 function registrar(){
 
     var email = document.getElementById("email");
@@ -29,7 +33,10 @@ function registrar(){
         localStorage.setItem('email', email.value);
         localStorage.setItem('senha', senha.value);
         alert("Usuario cadastrado com sucesso!");
-        window.location.href = "index 2.html"
+                setTimeout(function() {
+            window.location.href = "index.html"; 
+        }, 2000);
+
     }else{
         alert("Senhas não conferem!");
     }
